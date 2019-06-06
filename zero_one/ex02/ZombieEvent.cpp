@@ -6,7 +6,7 @@
 /*   By: tshata <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 13:41:03 by tshata            #+#    #+#             */
-/*   Updated: 2019/06/06 13:41:05 by tshata           ###   ########.fr       */
+/*   Updated: 2019/06/06 16:56:05 by tshata           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ ZombieEvent::~ZombieEvent(void)
 	return;
 }
 
-void	ZombieEvent::setZombieType(std::string desc)
+void	ZombieEvent::setZombieType(std::string type)
 {
 	this->type = type;
 	std::cout << "Zombie type has been set to: " << this->type << std::endl;
