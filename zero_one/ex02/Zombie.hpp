@@ -10,4 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ZOMBIE_H
+# define ZOMBIE_H
 
+#include <string>
+
+class Zombie{
+
+	private:
+		std::string name;
+		std::string type;
+
+	public:
+		Zombie(std::string type, std::string name);
+		~Zombie(void);
+
+		void	announce();
+													 
+};
+
+#endif

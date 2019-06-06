@@ -10,4 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ZOMBIE_EVENT_H
+# define ZOMBIE_EVENT_H
+
+#include <iostream>
+#include <string>
+#include "Zombie.hpp"
+
+class	ZombieEvent {
+
+	public: 
+
+		ZombieEvent(std::string name, std::string type); 
+		~ZombieEvent(void);
+
+		std::string		type;
+
+		void	setZombieType(std::string type);
+		Zombie	*newZombie(std::string name);
+		Zombie	*randomChump();
+
+};
+
+#endif
 
